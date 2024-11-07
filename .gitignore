@@ -26,3 +26,5 @@ yarn-error.log*
 
 # ASP.NET temporary files
 wwwroot/
+
+.vs/
