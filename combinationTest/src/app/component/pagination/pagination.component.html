@@ -1,0 +1,13 @@
+<div>
+    <div *ngFor="let combin of combinations">
+        [{{combin}}]
+    </div>
+</div>
+<button (click)="goBack()">חזור</button>
+<button [disabled]="page == 1" (click)="prevPage()">הקודם</button>
+<button [disabled]="currentIndex == totalCombination" (click)="nextPage()">הבא</button>
+
+
+
+<p-paginator class="ltr" (onPageChange)="onPageChange($event)" [first]="first" [rows]="pageSize"
+    [totalRecords]="totalCombination"></p-paginator>

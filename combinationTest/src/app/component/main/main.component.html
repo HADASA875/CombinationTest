@@ -1,0 +1,7 @@
+<app-input #input (nChange)="onNChange($event)" [lastCombinationMasage]="noCombinationMessage"></app-input>
+<div *ngIf="inputNumber > 0">
+    <app-combination
+        [currentCombiation]="currentCombination" [totalCombination]="totalCombinations"
+        [currentIndex]="currentIndex" [inputNumber]="inputNumber"></app-combination>
+    <app-button (reset)="onReset()" (next)="onNext()" (allCombinations)="getAllCombination()"></app-button>
+</div>

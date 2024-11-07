@@ -1,0 +1,4 @@
+<div *ngIf="lastCombinationMasage">{{lastCombinationMasage}}</div>
+<div>הכנס מספר</div>
+<input [(ngModel)]="numberToCombine" (input)="onInput($event)" type="number" min="1" max="20"
+    placeholder="Enter n" /><br>
